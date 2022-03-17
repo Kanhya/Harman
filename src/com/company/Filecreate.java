@@ -3,7 +3,7 @@ package com.company;
 import java. io. FileNotFoundException;
 import java. io. FileOutputStream;
 import java.io.IOException;
-public class Filecreat {
+public class Filecreate {
 public static void main(String[]args){
         String data="welcome to Java Programming";
         try{
