@@ -6,7 +6,7 @@ class Task extends Thread{
     public void run() {
 
 
-            System.out.println("Thread Execute - "+Thread.currentThread());
+            System.out.println("Thread Execute - "+Thread.currentThread().getName());
 
         }
 }
@@ -14,14 +14,11 @@ class Task extends Thread{
 public class MultithreadExample {
     public static void main(String[] args) {
 
-        Task t =new Task();
-        t.start();
+        for (int i = 0; i <= 10; i++) {
+            Task t = new Task();
+            t.start();
 
-        Task t1=new Task();
-        t1.start();
 
-        Task t2=new Task();
-        t2.start();
-
+        }
     }
 }
